@@ -1,0 +1,305 @@
+body{
+    font-family:"Josefin Slab", arial,
+    sans-serif;
+    margin:0;
+    box-sizing: border-box;
+    z-index: 1;
+ } 
+
+/* opacity for the background (extra div) */
+.backgroundImg{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+}
+
+.backOpacity{
+    background: #111;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity: .6;
+    position: fixed;
+}
+
+ a{color:inherit;
+     margin:5px 5px;
+ }
+ 
+header{   
+    list-style-type:none;
+    background:black;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width:100%;
+}
+
+
+nav ul li{
+    display:inline;
+    margin:2px;
+    color:#2a1e5c;
+    font-size:28px;
+    padding:2px 50px 2px 50px;
+    background:#ee4266;
+    border-radius:11em 1em;
+    position: relative;
+    top:-5px;
+    
+}
+
+.blogContainer{
+    opacity: .5;
+    background:#111;
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:200px;
+    z-index:;
+}
+
+.blog{
+    color:#fff;
+    clear:both;
+    text-indent:50px;
+    font-size:25px;
+    padding: 2.5%;
+    text-align: center;
+    z-index: 2;
+}
+
+video{
+    display: block;
+    margin:0px auto;
+}
+
+/*button to hide and show pictures*/
+.btn1{
+    background:#A0ECD0;
+    color:#2a1e5c;
+    display: block;
+    margin: 0px auto;
+    font-size: 20px
+}
+
+.btn2{
+    background:#A0ECD0;
+    color:#2a1e5c;
+    display: block;
+    margin: 0px auto;
+    font-size: 20px;
+    position: relative;
+    top:-30px;
+}
+
+/*hide class*/
+.btnHide{
+    display: none;
+}
+
+.pic{
+    display: block;
+    margin: 0px auto;
+    width:60%
+}
+
+
+.pic2{
+   margin:110px;
+}
+
+.top{
+text-align: center;
+}
+
+
+footer{
+    text-align:center;
+    background:#757780;
+    color:#ee4266;
+    border-style: groove;
+}
+
+
+footer ul li{
+    color:white;
+    font-size:20px;
+    display:inline-block;
+    width:90%;
+}
+
+.pic-link{
+    background:#EE4266;
+     color:#2A1E5C;
+    text-align:center;
+    font-size:25px;
+    margin:10px 0px 10px 0px;
+}
+
+
+
+.panel{
+    display:inline-block;
+    border-radius:10px;
+}
+.topOfPanel{
+    padding: 5px 0px 1px 0px;
+    background:white;
+    border-top-right-radius:10px;
+    border-top-left-radius: 10px
+}
+
+.panelCont{
+    color:white;
+    background:229;
+    padding:60px 20px;
+    border-radius: 10px;
+}
+    
+
+
+#panel1{ 
+    margin:;
+    background: #229;
+    text-align: center;
+    align-items: baseline;
+}
+
+#panel2{ 
+    margin:;
+    background:#229;
+    text-align: center;
+    
+}
+#panel3{ 
+    margin:;
+    background:#229;
+    text-align: center;
+}
+
+
+
+
+#panel4{ 
+    margin:;
+    background:#229;
+    text-align: center;
+}
+
+#panel5{ 
+    margin:;
+    background:#229;
+    text-align: center;
+}
+
+
+
+.container{
+    color:white;
+    background:#777;
+    margin:0% 5% 0% 25%;
+    padding:10px 25px 10px 25px;
+    display:inline-block;
+   
+}
+.panelBtn{
+    color:white;
+    background:#299;
+    border-radius: 11px;
+    border: solid;
+    border-color:#009669;
+    font-size:25px;
+}
+
+
+
+
+.enlarge{
+    height: 600px;
+    length:800px;
+}
+
+.enlarge1{
+    length:600px;
+    width:400px;
+}
+.link{
+    color:yellow;
+}
+.tab-panel{
+    margin:5%;
+    
+    
+}
+.tabs{
+    display:inline-flex;
+    list-style-type:none;
+    margin: 5px 0px 0px 0px;
+    color:white;
+}
+
+
+.panel{
+    display:none;
+    background:#299;
+    color:white;
+    padding:10px;
+    border-radius: 10px;
+    border:solid;
+    border-color:black;
+    box-shadow:0px 5px 45px 5px #111
+    
+}
+
+.tab{
+    cursor:pointer;
+    padding:10px;
+    background:#229;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin:1px 1px 0px 1px;
+}
+.active{
+    display:block;
+    background:#125;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+
+/* css for first page slideshow */
+
+.sliderContainer{
+    height: 500px;
+    width: 800px;
+    display: block;
+    margin:0px auto;
+}
+
+#backBtn{
+    position: relative;
+    left:500px;
+    top:500px;
+     width:10em;
+    height: 3em
+}
+#nextBtn{
+    position: relative;
+    top:500px;
+    width:10em;
+    height: 3em
+}
+
+.slidePics{
+    position: absolute;
+    width:800px;
+    height: 500px;
+    margin: 0px 0px 2em 0px;
+}
+
