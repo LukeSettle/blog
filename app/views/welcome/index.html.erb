@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Starting over</title>
     <link href="main.css" rel="stylesheet" type="text/css"> 
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab" />
     <meta charset="utf-8">
-</head>
+  </head>
     
    
-    <div class="backgroundImg">
-         <img src="/onThePeer.jpg" height="100%" width="100%" />
-     </div>
+  <div class="backgroundImg">
+      <img src="/onThePeer.jpg" height="100%" width="100%" />
+  </div>
     
  
-<body>
+  <body>
    
     <div class="backOpacity"></div>
     
      
     <!--top of page including sylvia and links-->
- <header>
+    <header>
     
       <nav>
-    <div class="top">
-        <img src="/images/SylviaPaint.jpg" height="125" >
-    </div>
-<ul>
-    <li>home</li>
-    <li><a href="page2.html">quiz</a></li>
-    <li><a href="page3.html">photos</a></li>
-    <li><a href="/articles/new">Blog</a></li>
+        <div class="top">
+          <img src="/images/SylviaPaint.jpg" height="125" >
+        </div>
+        <ul>
+          <li>home</li>
+          <li><a href="page2.html">quiz</a></li>
+          <li><a href="page3.html">photos</a></li>
+          <li><a href="/articles/new">Blog</a></li>
      
-</ul>
+        </ul>
   
-    </nav>
-  </header>
+      </nav>
+    </header>
     
     
     
-        <p class="blog" >
+    <p class="blog" >
             
 This website is going to be about a girl named Sylvia Fletcher.<br>
 She is the most amazing girl in the whole world. Although she is small, as seen in the picture below,<br> she has a big personality and a big heart!
 I love her very much and as you can see she is very pretty :) <br>She loves me for who I am and I love her for who she is, which is perfect!</p>
         
 
-<br>
+        <br>
     
 
 
-     <div>
+    <div>
         <button id="btn1" class="btn1"> hide photos</button>
-        <button id="btn2" class="btn2 btnHide">show photos</button>
-        
-     </div>
+        <button id="btn2" class="btn2 btnHide">show photos</button>   
+    </div>
 
     <br>
 
@@ -64,35 +63,38 @@ I love her very much and as you can see she is very pretty :) <br>She loves me f
     </div>
  
  
-<p class="blog">
-  Sylvia Fletcher is a beautiful and remarkable woman. Although, I am a huge loser, and do not deserve her one bit, Sylvia still loves me.<br> 
- She is understanding and very good at making me happy when I am feeling sad. She loves Jesus, and that makes her love everyone!<br> 
- She is an excellent cheerleader, but enjoys watching "reality television" the most. A close second, if not first, she loves to shop!<br>
- I wish that I could take her shopping everyday, but I have very little money. The money I do have, I am saving to buy her and engagement ring!<br>
- Which brings me to the reason I am learning to code websites. I am trying to learn as much about computers as I can because I plan to become a<br> 
- computer science major.
-<br /> <br />
-  Basically, I wanted a subject to create a website on, and I coudn't think of anything better than Sylvia Fletcher! There is so much I could <br>
-  write about her! I could write about her hair, or maybe about her character, or maybe about her leadershipp ability that is unmatched. I will <br>
-  continue to write about Sylvia while contiuing to work on the look and feel of this website. Hopefully, by the time it is done someone will <br>
-  able to get on here and learn all about Sylvia Fletcher in a fun and simplistic way!
- </p>
+    <p class="blog">
+         Sylvia Fletcher is a beautiful and remarkable woman. Although, I am a huge loser, and do not deserve her one bit, Sylvia still         loves me.<br> 
+         She is understanding and very good at making me happy when I am feeling sad. She loves Jesus, and that makes her love everyone!        <br> 
+         She is an excellent cheerleader, but enjoys watching "reality television" the most. A close second, if not first, she loves to         shop!<br>
+         I wish that I could take her shopping everyday, but I have very little money. The money I do have, I am saving to buy her and        engagement ring!<br>
+         Which brings me to the reason I am learning to code websites. I am trying to learn as much about computers as I can because I        plan to become a<br> 
+         computer science major.
+    </p>
+
+    <p class="blog">
+          Basically, I wanted a subject to create a website on, and I coudn't think of anything better than Sylvia Fletcher! There is         so much I could <br>
+          write about her! I could write about her hair, or maybe about her character, or maybe about her leadershipp ability that is         unmatched. I will <br>
+          continue to write about Sylvia while contiuing to work on the look and feel of this website. Hopefully, by the time it is         done someone will <br>
+          able to get on here and learn all about Sylvia Fletcher in a fun and simplistic way!
+    </p>
     
-  <h1>Listing articles</h1>
+    <h1 class="article-header">Listing articles</h1>
  
-<table class="blog">
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-    </tr>
-  <% end %>
-</table>
+    <table class="articles">
+      <tr>
+        <th class="article-lable">Title</th>
+        <th class="article-lable">Text</th>
+      </tr>
+     
+      <% @articles.each do |article| %>
+        <tr>
+          <td><%= article.title %></td>
+          <td><%= article.text %></td>
+        </tr>
+      <% end %>
+    </table>
+
     
     <div id='slider'>
         <ul class='slides'>
