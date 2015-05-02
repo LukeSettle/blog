@@ -311,8 +311,16 @@ h1{
     border:solid white 5px;
 }
 
+.article-label{
+}
+.article-container{
+    display: block;
+    margin:auto 0px;
+}
+
 .articles{
-    color:white;    
+    color:white;
+    font-size: 25px;  
 }
 
 

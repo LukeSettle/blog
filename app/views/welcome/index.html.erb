@@ -27,8 +27,8 @@
         </div>
         <ul>
           <li>home</li>
-          <li><a href="page2.html">quiz</a></li>
-          <li><a href="page3.html">photos</a></li>
+          <li><%= link_to 'Quiz', controller: 'quiz' %></li>
+          <li><%=link_to 'Photos', controller: 'pictures'%></li>
           <li><a href="/articles/new">Blog</a></li>
      
         </ul>
@@ -82,10 +82,12 @@ I love her very much and as you can see she is very pretty :) <br>She loves me f
     <h1 class="article-header">Listing articles</h1>
  
     <table class="articles">
-      <tr>
-        <th class="article-lable">Title</th>
-        <th class="article-lable">Text</th>
-      </tr>
+      <div class="article-container">
+        <tr>
+          <th class="article-label">Title</th>
+          <th class="article-label">Text</th>
+        </tr>
+      </div>
      
       <% @articles.each do |article| %>
         <tr>
