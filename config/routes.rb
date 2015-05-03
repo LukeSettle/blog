@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'quiz/index'
+
+  get 'pictures/index'
+
+  get 'pictures/index'
+
     get 'welcome/index'
     root 'welcome#index'
     resources :articles
@@ -6,8 +12,9 @@ Rails.application.routes.draw do
     
 
   # Example of regular route:
+  get '/pictures/index/', to: 'pictures#index'
     
-  get '/pictures/', to 'pictrues#index'
+  
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

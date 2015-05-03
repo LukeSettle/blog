@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+    <head> 
+        <title>
+        Quiz
+        </title>
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab" />
+    </head>
+
+    <div class="backgroundImg">
+         <img src="/onThePeer.jpg" height="100%" width="100%" />
+     </div>
+    
+ <body>
+    <header>
+        <nav>
+            <div class="top">
+            <img src="pictures/SylviaPaint.jpg" height="100">
+             </div>
+                <ul>
+                    <li><%= link_to 'Home', controller: 'welcome' %></li>
+                    <li>quiz</li>
+                    <li><a href="page3.html">photos</a></li>
+                </ul>
+        </nav>
+    </header>
+     
+ <h1>
+     This is a quiz about Sylvia Fletcher!
+</h1> 
+    <br>
+    <br>
+<p class="blog">
+    Answer 1-4 only if you answer the previous question correctly! If you do not know the answer, you may not continue with the quiz!!! If you don't know Sylvia, you dont know Sylvia!!!
+
+</p>
+       
+ <script src = "//code.jquery.com/jquery-1.11.0.min.js">
+     </script>
+<br>
+
+
+<div class="tab-panel">
+    <ul class="tabs">
+        
+        <li rel="panel1" class="tab active">question 1</li>
+        <li rel="panel2" class='tab'>question 2</li>
+        <li rel="panel3" class='tab'>question 3</li>
+        <li rel="panel4" class='tab'>question 4</li>
+        <li rel="panel5" class='tab'>question 5</li>
+        
+    </ul>
+    
+        <div id="panel1"  class="panel active">
+            
+            
+                    <div id=innerPanel1 class="innerPanel">
+          <div class="panelCont">
+              
+                        <button id=panelBtn1 class="panelBtn">
+                        Middle Name?
+                        </button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="panel2" class="panel">
+          
+                <div id=innerPanel2 class="innerPanel">
+                    <div class=panelCont>
+                        <button id=panelBtn2 class="panelBtn">
+                        Eye Color?
+                        </button>
+                </div>
+            </div>
+        </div>
+    
+        <div id="panel3" class="panel">
+            <div id=innerPanel3 class="innerPanel">
+             <div class=panelCont>
+                        <button id=panelBtn3 class="panelBtn">
+                            Date of Birth?
+                        </button>
+                </div>
+            </div>
+        </div>
+   
+     <div id="panel4" class="panel">
+             <div id=innerPanel4 class="innerPanel">
+           
+            <div class=panelCont>
+                        <button id=panelBtn4 class="panelBtn">
+                       Favorite Holiday?
+                        </button>
+                </div>
+            </div>
+    </div>
+    
+    <div id="panel5" class="panel">
+             <div id=innerPanel5 class="innerPanel">
+           
+            <div class=panelCont>
+                        <button id=panelBtn5 class="panelBtn">
+                       favorite candy?
+                        </button>
+                </div>
+            </div>
+    </div>
+    </div>
+     
+<footer id="pgTwoFoot">
+  <ul>
+   <li>Created by: Luke Settle</li>
+   <li>Last edited: 11/20/2014</li>
+  </ul>
+</footer>
+ 
+
+<script>
+    
+    $(function(){
+    
+  
+        
+        
+        
+        
+        
+        
+            $("#panelBtn1") .on("click", function(){
+               var name = prompt("What is Sylvia's middle name?")
+               
+         if (name==="Louise"){
+                alert("Good!!!You know a little about Sylvia Louise Fletcher!!!")
+         }
+            else if (name === "louise"){
+                alert("Good!!!You know a little about Sylvia Louise Fletcher!!!")}
+          else if (name.length<1){
+                    alert("Please enter a name")
+                }
+            
+        else{
+                    alert("WRONG!!! You don't know anything about Sylvia Fletcher!!!")
+                
+                }
+                
+            });
+                
+                
+        
+        
+        
+                
+                
+                   $("#panelBtn2") .on("click", function(){
+               var eye = prompt("What is Sylvia's eye color?")
+               
+         if (eye==="green"){
+                alert("Good!!!You know a some about Sylvia Louise Fletcher, who has green eyes!!!")
+         }
+        
+        else if (eye==="Green"){
+            alert("Good!!!You know a some about Sylvia Louise Fletcher, who has green eyes!!!")
+        }
+        else{
+                    alert("WRONG!!! You don't know much about Sylvia Fletcher!!!")
+                
+                }
+                       
+             
+            });
+        
+        
+        
+        
+        
+        
+        $("#panelBtn3") .on("click", function(){
+               var age = prompt("When was Sylvia born?")
+               
+         if (age==="7/18/1995"){
+                alert("Good!!!You know quite a bit about Sylvia Louise Fletcher, who has green eyes and was born on 7/18/1995!!!")
+         }
+        else if (age==="july 18"){
+            alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+            else if (age==="july 18 1995"){ alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+            
+            else if (age==="07/18/95"){
+                alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+            
+            else if (age==="July 18 1995"){
+                alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+            else if (age === "07/18/1995"){
+                alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+            }
+            
+              else if (age==="July 18, 1995"){
+                alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+              else if (age==="july 18, 1995"){
+                alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+            
+              else if (age==="july 18 1995"){
+                alert("Good!!!You know quite a bit about Sylvia Lousie Fletcher, who has green eyes and was born on 7/18/1995!!!")
+        }
+            
+        else{
+                    alert("WRONG!!! You wish you knew about Sylvia Fletcher!!!")
+                
+                }
+        
+        
+      });
+        
+        
+        
+        
+        
+        
+         
+              $("#panelBtn4") .on("click", function(){
+               var holiday = prompt("What is Sylvia's favorite holiday?")
+               
+         if (holiday==="Thanksgiving"){
+                alert("Good!!!You know a lot about Sylvia Louise Fletcher, who has green eyes, was born on 7/18/1995, and who's favorite holiday is Thanksgiving!!!")
+         }
+        else if (holiday==="thanksgiving"){
+            alert("Good!!!You know a lot about Sylvia Lousie Fletcher, who has green eyes, was born on 7/18/1995, and who's favorite holiday is Thanksgiving!!!")
+        }
+        else{
+                    alert("WRONG!!! You are kind of knowledgeable about Sylvia Fletcher!!!")
+                
+                }
+                
+            });
+        
+        
+        
+        $("#panelBtn5").on("click",function(){
+            var candy = prompt("what is Sylvia's favorite candy?")
+                
+                if (candy === "sour octopi"){
+                    alert("Good!!!You know a lot about Sylvia Lousie Fletcher, who has green eyes, was born on 7/18/1995, who's favorite holiday is Thanksgiving, and favorite candy is sour octopi!!!")
+                }
+            
+                    else if (candy.length < 1){
+                        alert("please enter a valid candy product")
+                    }
+            else{
+                alert("WRONG!!! You know a lot about Sylvia, but you are no expert!!!")
+            }
+                });
+                                
+                
+        
+        
+       
+            
+            $(".tab-panel .tabs .tab").on("click", function(){
+            $('.tab-panel .tabs li.active').removeClass('active');
+                $(this).addClass('active');
+                var panelToShow = $(this).attr('rel');
+                
+            $('.tab-panel .panel.active').fadeOut(300, function(){
+                $(this).removeClass('active');
+                
+                $('#'+panelToShow).fadeIn(300, function(){
+                    $(this).addClass('active')
+                
+                });
+            
+            });
+    
+            });
+   
+        
+      });
+</script>
+
+
+ 
+ </body>
+
+
+
+
+</html>
