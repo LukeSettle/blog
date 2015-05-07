@@ -17,15 +17,16 @@
             <img src="/images/SylviaPaint.jpg" height="100">
           </div>
     <ul>
-        <li><%= link_to 'home', controller:'welcome'%></li>
+        <li><%= link_to 'Home', controller:'welcome'%></li>
         <li><%= link_to 'Quiz', controller:'quiz' %></li>
-        <li>photos</li>
+        <li>Photos</li>
+        <li><a href='/articles/new'>Blog</a></li>
     </ul>
     </nav>
  </header>
 
 <div class="pic-link">
-   <a href="page4.html">2</a>
+   <%= link_to 'Next', controller: 'pictures2' %>
  </div>
 
     
@@ -51,7 +52,7 @@
   
  <br><br><br>
  <div class="pic-link">
-   <a href="page4.html">2</a>
+   <%= link_to 'Next', controller: 'pictures2' %>
  </div>
    
 

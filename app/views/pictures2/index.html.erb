@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <title>
+            Starting over
+        </title> 
+        <link href="main.css" rel="stylesheet"  type="text/css"> 
+        <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Josefin Slab" />
+    </head>
+    
+    <div class="backgroundImg">
+         <img src="/images/onThePeer.jpg" height="100%" width="100%" />
+     </div>
+
+    <body>
+        <div class="backOpacity"></div>
+        <body>
+ <header>
+      <nav>
+        <div class="top">
+            <img src="/images/SylviaPaint.jpg" height="100">
+          </div>
+    <ul>
+        <li><%= link_to 'Home', controller:'welcome' %></li>
+        <li><%= link_to 'Quiz', controller:'quiz' %></li>
+        <li>Photos</li>
+        <li><a href='/articles/new'>Blog</a></li>
+    </ul>
+    </nav>
+ </header>
+
+        
+         <div id="pg4PicLink" class="pic-link">
+        <%= link_to 'Back', controller: 'pictures' %>
+    </div>
+        
+    <div class="pic2">
+        <img src="/images/bowling1.jpg" length="500" width="300">
+        <img src="/images/bowling2.jpg" length="500" width="300">
+        <img src="/images/bowling3.jpg" length="500" width="300">
+        <img src="/images/bowling4.jpg" length="500" width="300">
+        <img src="/images/bowling5.jpg" length="500" width="300">
+        <img src="/images/bowling6.jpg" length="500" width="300">
+        <img src="/images/bowling7.jpg" length="500" width="300">
+    </div>
+<br/>
+
+    <video class="video" width="800" height="800" preload="auto" autoplay loop muted>
+        <source src="/images/BowlingVideo.mp4" type="video/mp4">
+    hmm... Your browser must not support this video :(
+
+    </video>
+
+
+    <div id="pg4PicLink" class="pic-link">
+        <%= link_to 'Back', controller: 'pictures' %>
+    </div>
+
+    <footer id="pgFourFoot">
+        <ul>
+            <li>Created by: Luke Settle</li>
+            <li>Last edited: 11/20/2014</li>
+        </ul>
+    </footer>
+
+  </body>
+</html>

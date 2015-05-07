@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'pictures2/index'
+
   get 'quiz/index'
 
   get 'pictures/index'
@@ -13,7 +15,8 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   get '/pictures/index/', to: 'pictures#index'
-    
+
+  get '/pictures2/index/' => 'pictures2#index'
   
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
