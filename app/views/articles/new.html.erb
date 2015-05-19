@@ -1,24 +1,6 @@
-<html>
-    <head>
-        <title>blog</title>
-    </head>
-    <body>
-        <h1>New Article</h1>
-            <%= form_for :article, url: articles_path do |f| %>
-        <p class='box-titles'>
-            <%= f.label :title %>
-            <%= f.text_field :title %>
-        </p>
+ <h1>New Article</h1>
+        <%= render 'form' %>
 
-        <p class='box-titles'>
-            <%= f.label :text %><br>
-            <%= f.text_area :text %>
-        </p>
-        <p>
-            <%= f.submit %>
-        </p>
+     <a href='/welcome/index.html'>Home</a>
 
-        <a href='/welcome/index.html'>Home</a>
-        <% end %>
-    </body>
-</html>
+ 

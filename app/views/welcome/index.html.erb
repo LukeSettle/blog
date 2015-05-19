@@ -86,37 +86,39 @@ I love her very much and as you can see she is very pretty :) <br>She loves me f
         <tr>
           <th class="article-label">Title</th>
           <th class="article-label">Text</th>
+          <th class="article-label"><a href="articles/new.html">New</a></th>
         </tr>
       </div>
      
       <% @articles.each do |article| %>
         <tr>
-          <td><%= article.title %></td>
-          <td><%= article.text %></td>
+          <td class='article-titles'>
+            <%= article.title %>
+          </td>
+
+          <td class='article-text'>
+            <%= article.text %>
+          </td>
+
+          <td class='link-to-article'>
+            <%= link_to 'Show', article_path(article) %>
+          <td>
+
+          <td>
+            <%= link_to 'Edit', edit_article_path(article) %>
+          </td>
+
+          <td>
+            <%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %>
+          </td>
+          <td>
+            <a href="articles/new.html">New</a>
+          </td>
         </tr>
       <% end %>
-    </table>
-
-    
-    <div id='slider'>
-        <ul class='slides'>
-            <li class="slide"><img src="/images/bowling1.jpg"  height="400px" width="720px" />
-            </li>
-            
-            <li class="slide"><img src="/images/bowling2.jpg"  height="400px" width="720px" />
-            </li>
-            
-            <li class="slide"><img src="/images/bowling3.jpg"  height="400px" width="720px" />
-            </li>
-            
-            <li class="slide"><img src="/images/bowling4.jpg" height="400px" width="720px" /></li>
-            
-        </ul>
-    
-    </div>
-    
-    
-    
+    </table>    
     
     
  <br><br><br>

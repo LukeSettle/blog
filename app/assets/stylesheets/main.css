@@ -46,8 +46,7 @@ nav ul li{
     padding:2px 50px 2px 50px;
     background:#ee4266;
     border-radius:11em 1em;
-    position: relative;
-    top:-5px;
+    
     
 }
 
@@ -304,23 +303,8 @@ h1{
 }
 
 
-/* styles for listed articles on index */
 
-.article-header{
-    color:white;
-    border:solid white 5px;
-}
 
-.article-label{
-}
-.article-container{
-    display: block;
-    margin:auto 0px;
-}
 
-.articles{
-    color:white;
-    font-size: 25px;  
-}
 
 
