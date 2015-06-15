@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
  
+#gem for heroku production
+gem 'puma', '~> 2.11.3'
 
  group :production do
  	gem 'pg'
