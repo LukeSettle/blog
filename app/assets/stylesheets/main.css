@@ -79,7 +79,7 @@ video{
     background:#A0ECD0;
     color:#2a1e5c;
     display: block;
-    margin: 0px auto;
+    margin:0px auto;
     font-size: 20px
 }
 
@@ -160,20 +160,17 @@ footer ul li{
 
 
 #panel1{ 
-    margin:;
     background: #229;
     text-align: center;
     align-items: baseline;
 }
 
-#panel2{ 
-    margin:;
+#panel2{
     background:#229;
     text-align: center;
     
 }
-#panel3{ 
-    margin:;
+#panel3{
     background:#229;
     text-align: center;
 }
@@ -181,14 +178,12 @@ footer ul li{
 
 
 
-#panel4{ 
-    margin:;
+#panel4{
     background:#229;
     text-align: center;
 }
 
-#panel5{ 
-    margin:;
+#panel5{
     background:#229;
     text-align: center;
 }
@@ -217,11 +212,11 @@ footer ul li{
 
 .enlarge{
     height: 600px;
-    length:800px;
+    width:800px;
 }
 
 .enlarge1{
-    length:600px;
+    height:600px;
     width:400px;
 }
 .link{
@@ -284,7 +279,7 @@ h1{
     position: relative;
     left:500px;
     top:500px;
-     width:10em;
+    width:10em;
     height: 3em
 }
 #nextBtn{
