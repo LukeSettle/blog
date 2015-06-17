@@ -9,9 +9,11 @@ body{
 /* opacity for the background (extra div) */
 .backgroundImg{
     position: fixed;
+    top:0px;
     height: 100%;
     width: 100%;
     z-index: -2;
+    margin: 0px;
 }
 
 .backOpacity{
@@ -21,6 +23,8 @@ body{
     z-index:-1;
     opacity: .6;
     position: fixed;
+    top:0px;
+    margin: 0px;
 }
 
  a{color:inherit;

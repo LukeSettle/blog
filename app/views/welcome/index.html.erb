@@ -75,7 +75,7 @@ I love her very much and as you can see she is very pretty :) <br>She loves me f
     <p class="blog">
           Basically, I wanted a subject to create a website on, and I coudn't think of anything better than Sylvia Fletcher! There is         so much I could <br>
           write about her! I could write about her hair, or maybe about her character, or maybe about her leadershipp ability that is         unmatched. I will <br>
-          continue to write about Sylvia while contiuing to work on the look and feel of this website. Hopefully, by the time it is         done someone will <br>
+          continue to write about Sylvia while contiuing to work on the look and feel of this website. Hopefully, by the time it is         done someone will be <br>
           able to get on here and learn all about Sylvia Fletcher in a fun and simplistic way!
     </p>
     
@@ -86,7 +86,7 @@ I love her very much and as you can see she is very pretty :) <br>She loves me f
         <tr>
           <th class="article-label">Title</th>
           <th class="article-label">Text</th>
-          <th class="article-label"><a href="articles/new.html">New</a></th>
+          <%= link_to "New", new_article_path %>
         </tr>
       </div>
      
@@ -109,7 +109,7 @@ I love her very much and as you can see she is very pretty :) <br>She loves me f
           </td>
 
           <td>
-            <%= link_to 'Destroy', article_path(article),
+            <%= link_to 'Delete', article_path(article),
               method: :delete,
               data: { confirm: 'Are you sure?' } %>
           </td>

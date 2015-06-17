@@ -1,8 +1,4 @@
-.box-titles{
-	color:red;
-	display:block;
-	margin:0px auto;
-}
+/*styles for all articles (form_for) */
 
 .field_with_errors{
 	background:red;
@@ -11,23 +7,17 @@
 
 .title-field{
 	/*container styles */
-	display:block;
+	display:inline-block;
 	margin:0px auto;
-	text-align: center;
-
-	/* text styles */
-	display:block;
-	margin:0px auto;
-	text-align: center;
+	color: white;
+	padding: 5px;
+	font-size: 30px;
 }
 
 .text-field{
 	display:block;
 	margin:0px auto;
-	text-align: center;
-	display:block;
-	margin:0px auto;
-	text-align: center;
+	color:white;
 }
 
 .backgroundImg{
@@ -35,6 +25,12 @@
     height: 100%;
     width: 100%;
     z-index: -2;
+}
+
+.user-input{
+	display: block;
+	margin: 0px auto;
+	text-align: center;
 }
 
 
@@ -47,3 +43,24 @@
 .show-text{
 	color:white;
 }
+
+
+/* styles for new page */
+.table-links{
+	color:white;
+}
+
+#title-label{
+
+}
+
+
+
+
+
+
+
+
+
+
+
